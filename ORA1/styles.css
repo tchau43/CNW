@@ -1,0 +1,63 @@
+/* Highlight the active link */
+.w3-bar-item.active {
+    background-color: #4CAF50; /* Màu nền cho mục đang được chọn */
+    color: white;
+}
+
+/* General font styling */
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Sidebar styles */
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+
+/* Footer styles */
+#myFooter {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#myFooter h4 {
+    margin: 0;
+}
+
+#myFooter p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content-column {
+    width: 65%;
+}
+.content-image {
+    height: 200px;
+    object-fit: contain;
+}
+.ad-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.ad-column {
+    width: 65%;
+}
+.ad-image {
+    height: 200px;
+    object-fit: contain;
+}
