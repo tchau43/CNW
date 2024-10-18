@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<!-- Include topnavi -->
+<!-- Top Navi -->
 <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-large" style="display: flex; align-items: center; justify-content: flex-start;">
-        <!-- Logo nằm ở góc trái -->
         <a href="index.html">
             <img src="image/CNWeb_Logo.png" alt="ảnh logo" style="height:40px; width: auto; padding:5px;" onerror="this.onerror=null; this.src='image/backup-image.png';">
         </a>
@@ -28,41 +26,114 @@
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
     <h4 class="w3-bar-item"><b>Vận hành môn học</b></h4>
     <a href="#introduction" class="w3-bar-item w3-button w3-hover-black">Giới thiệu</a>
+    <a href="#opencourse" class="w3-bar-item w3-button w3-hover-black">Thông tin khai giảng</a>
     <a href="#seminar" class="w3-bar-item w3-button w3-hover-black">Thông tin Seminar</a>
     <a href="#companies" class="w3-bar-item w3-button w3-hover-black">Công ty quan tâm</a>
 </nav>
 
 <!-- Main Content (Article Section) -->
 <div class="w3-main" style="margin-left:250px; padding-top:64px;">
-    <section id="introduction" class="w3-container">
-        <h1>Giới thiệu môn học</h1>
-        <p>Môn học này cung cấp các kiến thức nền tảng và chuyên sâu về các công nghệ phát triển web, từ giao diện người dùng đến backend.</p>
-        <img src="course-intro.jpg" alt="Course Introduction" style="width:100%;height:auto;">
+    <section id="introduction" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Giới thiệu môn học</h1>
+            <p>Môn học này cung cấp các kiến thức nền tảng và chuyên sâu về các công nghệ phát triển web, từ giao diện người dùng đến backend.</p>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="image/chau1.png" alt="Course Introduction" class="content-image">
+        </div>
     </section>
 
-    <section id="seminar" class="w3-container" style="margin-top:50px;">
-        <h1>Thông tin Seminar</h1>
-        <p>Seminar sẽ được tổ chức vào ngày 15 tháng 12, với sự tham gia của các chuyên gia trong lĩnh vực phát triển web, như Google và Microsoft.</p>
-        <img src="seminar.jpg" alt="Seminar Information" style="width:100%;height:auto;">
+    <section id="opencourse" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Thông tin khai giảng</h1>
+            <p>Bắt đầu: 10/10/2024 => 10/10/2025</p>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="image/welcome.png" alt="Course Introduction" class="content-image">
+        </div>
     </section>
 
-    <section id="companies" class="w3-container" style="margin-top:50px;">
-        <h1>Các công ty quan tâm</h1>
-        <p>Các công ty như Google, Microsoft, và Facebook luôn tìm kiếm nhân tài trong lĩnh vực công nghệ phát triển web, với nhiều cơ hội hợp tác và tuyển dụng.</p>
-        <img src="companies.jpg" alt="Interested Companies" style="width:100%;height:auto;">
-        <p><strong>Quảng cáo liên quan (AD):</strong> <a href="https://www.google.com" target="_blank"><img src="ad-google.jpg" alt="Google" style="width:100%;height:auto;"></a></p>
+    <section id="seminar" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Thông tin Seminar</h1>
+            <p>Tên Seminar: Công Nghệ Blockchain và Ứng Dụng Trong Kinh Doanh</p>
+            <p>Ngày tổ chức: 5 tháng 12, 2024</p>
+            <p>Thời gian: 2:00 PM - 5:00 PM</p>
+            <p>Địa điểm: Hội trường Lớn, Tòa nhà Kinh Doanh, Đại học Kinh Tế Quốc Dân</p>
+            <p>Mục tiêu: 
+                Buổi seminar nhằm giúp người tham gia hiểu rõ hơn về công nghệ blockchain, các nguyên lý cơ bản, và tiềm năng ứng dụng trong lĩnh vực tài chính và kinh doanh. Diễn giả sẽ giới thiệu cách blockchain đang thay đổi các ngành công nghiệp và tương lai của công nghệ này trong nền kinh tế toàn cầu.</p>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="image/blockchain.png" alt="Course Introduction" class="content-image">
+        </div>
+    </section>
+
+    <section id="companies" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Các công ty quan tâm</h1>  
+        </div>
+
+            <div class="w3-twothird w3-container">
+                <h2>Microsoft Corporation</h2>
+                <p>Microsoft Corporation phát triển, cấp phép, và hỗ trợ một loạt rộng các sản phẩm và dịch vụ liên quan đến máy tính. Nổi bật với hệ điều hành Windows, Microsoft Office, và nền tảng điện toán đám mây Azure.</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/microsoft.png" alt="Microsoft Corporation" class="content-image"></a>
+            </div>
+            
+            <div class="w3-twothird w3-container">
+                <h2>Tesla, Inc</h2>
+                <p>Tesla, Inc là công ty công nghệ và sản xuất ô tô điện hàng đầu tại Mỹ. Tesla không chỉ sản xuất ô tô điện mà còn phát triển các giải pháp năng lượng tái tạo như pin lưu trữ năng lượng và các sản phẩm năng lượng mặt trời.</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/tesla.png" alt="Tesla, Inc" class="content-image"></a>
+            </div>
+            
+            <div class="w3-twothird w3-container">
+                <h2>Amazon.com</h2>
+                <p>Amazon là công ty bán lẻ trực tuyến lớn nhất thế giới, nổi tiếng với điện toán đám mây AWS và các sản phẩm tiêu dùng điện tử.</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/amazon.png" alt="Amazon.com" class="content-image"></a>
+            </div>
+            
+            <div class="w3-twothird w3-container">
+                <p>Khai phá khả năng sáng tạo của bạn với CSS! Tham gia hội thảo của chúng tôi để học các kỹ thuật CSS tiên tiến như tạo bảng màu, kiểu chữ, và thiết kế responsive layout. Hãy trở thành bậc thầy thiết kế giao diện web ngay bây giờ.</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/qc3.png" alt="Hội thảo CSS Styling" class="content-image"></a>
+            </div>
+            
+            <div class="w3-twothird w3-container">
+                <p>Đào sâu vào HTML5 với khóa học nâng cao của chúng tôi. Tìm hiểu về các tính năng tương tác của HTML5 và cách áp dụng chúng để phát triển các trang web hiện đại. Đăng ký ngay hôm nay để nâng tầm kỹ năng của bạn!</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/qc4.png" alt="Khóa học HTML5 nâng cao" class="content-image"></a>
+            </div>
+            
+            <div class="w3-twothird w3-container">
+                <p>Trở thành lập trình viên Full-Stack được chứng nhận. Học cách làm việc với cả front-end và back-end để phát triển ứng dụng web hoàn chỉnh. Tìm hiểu về cơ sở dữ liệu, máy chủ, và nhiều ngôn ngữ lập trình. Đăng ký ngay để bắt đầu sự nghiệp lập trình của bạn!</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="" target="_blank"><img src="image/qc5.png" alt="Chứng nhận lập trình viên Full-Stack" class="content-image"></a>
+            </div>
+            
+        
     </section>
 </div>
 
 <!-- Footer -->
 <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
-        <h4>Thông tin Footer</h4>
+        <h4>Thông tin liên hệ</h4>
     </div>
     <div class="w3-container w3-theme-l1">
-        <p>Powered by Web Technologies</p>
+        <p>Họ tên: Phạm Thái Châu</p>
+        <p>MSSV: 20210109</p>
+        <p>Email: <a href="mailto:Chau.PT210109@sis.hust.edu.vn">Chau.PT210109@sis.hust.edu.vn</a></p>
     </div>
 </footer>
+
 
 </body>
 </html>

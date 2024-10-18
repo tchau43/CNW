@@ -17,7 +17,6 @@ html, body, h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     height: inherit;
 }
-
 /* Footer styles */
 #myFooter {
     background-color: #333;
@@ -45,18 +44,27 @@ html, body, h1, h2, h3, h4, h5, h6 {
     width: 65%;
 }
 .content-image {
+    float: right;
     height: 200px;
     object-fit: contain;
 }
+
+.company-logo, .ad-image {
+    width: 300px;
+    height: auto;
+}
+
 .ad-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
 }
+
 .ad-column {
     width: 65%;
 }
+
 .ad-image {
     height: 200px;
     object-fit: contain;
