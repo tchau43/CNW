@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Guide</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-left: 5px solid #4a90e2;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .example {
+            background: #e6f7ff;
+            padding: 15px;
+            border-left: 4px solid #1890ff;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Grid Layout Guide</h1>
+
+        <div class="section">
+            <h2>Overview</h2>
+            <p>This page provides instructions on how to use a responsive 15-column grid layout system. Follow the guidelines below to set up your layout effectively and achieve consistency across pages.</p>
+        </div>
+
+        <div class="section">
+            <h2>Grid System Specifications</h2>
+            <ul>
+                <li>Columns: 15 equal-width columns (numbered 1 to 15)</li>
+                <li>Rows: 8 equal-height rows (numbered 1 to 8)</li>
+                <li>Horizontal placement: <code>grid-column: start/end</code> to span columns</li>
+                <li>Vertical placement: <code>grid-row: start/end</code> to span rows</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Basic Examples</h2>
+            <p class="example">
+                <strong>Full-width section:</strong> <code>grid-column: 1 / 16;</code><br>
+                <strong>Left half:</strong> <code>grid-column: 1 / 8;</code><br>
+                <strong>Right half:</strong> <code>grid-column: 8 / 16;</code><br>
+                <strong>Top two rows:</strong> <code>grid-row: 1 / 3;</code>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Advanced Tips</h2>
+            <ul>
+                <li>Use <code>grid-template-columns: repeat(15, 1fr);</code> in your CSS to create 15 equal columns.</li>
+                <li>To center content, use <code>justify-content: center;</code> and <code>align-content: center;</code>.</li>
+                <li>For spacing, apply <code>gap: 10px;</code> or a similar value to add spacing between rows and columns.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Common Layout Patterns</h2>
+            <p class="example">
+                <strong>Header (full width):</strong> <code>grid-column: 1 / 16; grid-row: 1 / 2;</code><br>
+                <strong>Sidebar (left third):</strong> <code>grid-column: 1 / 6; grid-row: 2 / 8;</code><br>
+                <strong>Main Content (right two-thirds):</strong> <code>grid-column: 6 / 16; grid-row: 2 / 8;</code><br>
+                <strong>Footer (full width):</strong> <code>grid-column: 1 / 16; grid-row: 8 / 9;</code>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS-Tricks: Complete Guide to Grid</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN Web Docs: CSS Grid Layout</a></li>
+                <li><a href="https://gridbyexample.com/" target="_blank">Grid by Example</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
